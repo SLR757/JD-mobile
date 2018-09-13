@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no,maximum-scale=1.0, minimum-scale=1.0">
+    <title>多快好省，购物上京东!</title>
+    <script src="js/jquery.js"></script>
+    <script src="js/jd.js"></script>
+    <!-- <link rel="stylesheet" href="css/rem.css"> -->
+    <link rel="stylesheet" href="css/jd.css">
+    <link rel="stylesheet" href="css/classify.css">
+    
+</head>
+<body class="mhome" onload="countTime()">
+    <div id="top" >
+        <span><a href="classify.html"><img src="images/列表.png" alt="" id="top_img1"></a></span>
+        <div id="top_input">
+            <span><img src="images/京东.png" alt="" id="top_input_img1"></span>
+            <span><img src="images/搜索.png" alt="" id="top_input_img2"></span>
+            <input type="text" placeholder="MAC Book" maxlength="20">
+        </div>
+        <a href="" id="top_a">
+            <img src="images/消息.png" alt="" id="top_a_img">
+            <span id="top_a_span">消息</span>
+        </a>
+    </div>
+    <div id="banner">
+        <img src="images/banner1.jpg" alt="">
+    </div>
+    <div id="middle">
+        <img src="images/img1.png" alt="">
+    </div>
+
+    <!-- 小图标 -->
+    <div id="iconInfo">
+        <span class="icon">
+            <a href="" class="icon_a">
+                <img src="images/jdcs.png" alt="" class="icon_img">
+                <span class="icon_span">京东超市</span>
+            </a>
+        </span>
+        <span class="icon">
+            <a href="" class="icon_a">
+                <img src="images/wph.png" alt="" class="icon_img">
+                <span class="icon_span">唯品会</span>
+            </a>
+        </span>
+        <span class="icon">
+            <a href="" class="icon_a">
+                <img src="images/jdfs.png" alt="" class="icon_img">
+                <span class="icon_span">京东服饰</span>
+            </a>
+        </span>
+        <span class="icon">
+            <a href="" class="icon_a">
+                <img src="images/jdsx.png" alt="" class="icon_img">
+                <span class="icon_span">京东生鲜</span>
+            </a>
+        </span>
+        <span class="icon">
+            <a href="" class="icon_a">
+                <img src="images/phb.png" alt="" class="icon_img">
+                <span class="icon_span">排行榜</span>
+            </a>
+        </span>
+        <span class="icon">
+            <a href="" class="icon_a">
+                <img src="images/czjf.png" alt="" class="icon_img">
+                <span class="icon_span">充值缴费</span>
+            </a>
+        </span>
+        <span class="icon">
+            <a href="" class="icon_a">
+                <img src="images/99p.png" alt="" class="icon_img">
+                <span class="icon_span">9.9元拼</span>
+            </a>
+        </span>
+        <span class="icon">
+            <a href="" class="icon_a">
+                <img src="images/lj.png" alt="" class="icon_img">
+                <span class="icon_span">领劵</span>
+            </a>
+        </span>
+        <span class="icon">
+            <a href="" class="icon_a">
+                <img src="images/zq.png" alt="" class="icon_img">
+                <span class="icon_span">挣钱</span>
+            </a>
+        </span>
+        <span class="icon">
+            <a href="" class="icon_a">
+                <img src="images/qb.png" alt="" class="icon_img">
+                <span class="icon_span">全部</span>
+            </a>
+        </span>
+    </div>
+
+    <div id="new_list">
+        <img src="images/jd-news-tit.png" alt="">
+        <div id="new_list_ul">
+            <a href="quickNews.html">
+                <ul>
+                    <li>网吧电脑配置</li>
+                    <li>今夏流行服饰</li>
+                    <li>怎么样才能吃的最健康</li>
+                    <li>大学生笔记本电脑怎么选</li>
+                </ul>
+            </a>
+        </div>
+        <span><a href="quickNews.html" >|更多</a></span>
+    </div>
+
+    <div id="choujiang">
+        <img src="images/mrfl.jpg" alt="">
+
+    </div>
+
+    <div id="fourth">
+        <a href="#" id="jdms1">
+            <strong id="strongtext1">京东秒杀</strong>
+            <strong id="strongtext2">10点场</strong>
+            <div id="countDown">  
+                    <!-- <span id="_d">00</span>   -->
+                     <span id="_h" class="timer">00</span>
+                     <span class="maohao">:</span>  
+                     <span id="_m" class="timer">00</span>  
+                     <span class="maohao">:</span>
+                     <span id="_s" class="timer">00</span> 
+            </div> 
+        </a>
+        <a href="#" id="jdms2"><text>京选轮秒番</text><i id="jdms2_a"><img src="images/arrow_rt.png" alt=""></i></a>
+
+        <div id="fourth_second">
+            <ul id="fourth_second_ul" class="clear-fix">
+                <li class="fourth_second_li">
+                    <div class="fourth_second_img">
+                        <a href="">
+                            <img src="images/msimg1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="fourth_second_price">
+                        <span class="new_price">￥2999</span>
+                        <span class="old_price">￥3599</span>
+                    </div>
+                </li>
+                <li class="fourth_second_li">
+                    <div class="fourth_second_img">
+                        <a href="">
+                            <img src="images/msimg2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="fourth_second_price">
+                            <span class="new_price">￥188</span>
+                            <span class="old_price">￥268</span>
+                        </div>
+                </li>
+                <li class="fourth_second_li">
+                    <div class="fourth_second_img">
+                        <a href="">
+                            <img src="images/msimg3.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="fourth_second_price">
+                            <span class="new_price">￥109</span>
+                            <span class="old_price">￥179</span>
+                        </div>
+                </li>
+                <li class="fourth_second_li">
+                    <div class="fourth_second_img">
+                        <a href="">
+                            <img src="images/msimg4.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="fourth_second_price">
+                            <span class="new_price">￥5888</span>
+                            <span class="old_price">￥6499</span>
+                        </div>
+                </li>
+                <li class="fourth_second_li">
+                    <div class="fourth_second_img">
+                        <a href="">
+                            <img src="images/msimg5.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="fourth_second_price">
+                            <span class="new_price">￥688</span>
+                            <span class="old_price">￥889</span>
+                        </div>
+                </li>
+                <li class="fourth_second_li">
+                    <div class="fourth_second_img">
+                        <a href="">
+                            <img src="images/msimg6.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="fourth_second_price">
+                            <span class="new_price">￥1099</span>
+                            <span class="old_price">￥1299</span>
+                        </div>
+                </li>
+                <li class="fourth_second_li">
+                    <div class="fourth_second_img">
+                        <a href="">
+                            <img src="images/msimg1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="fourth_second_price">
+        
+                    </div>
+                </li>
+            </ul>
+        </div>
+        </div>
+
+
+    <div id="fiveth">
+        <div id="fiveth_img">
+            <img src="images/njxy.jpg" alt="">
+        </div>
+        <div id="fiveth_goods1">
+            <div id="fiveth_goods1_1">
+                <span class="fiveth_title1">——手游大神——</span>
+                <span class="fiveth_title2">为了荣誉而战</span>
+                <div class="fiveth_goods_img">
+                    <img src="images/good1.jpg" alt="">
+                    <img src="images/goods2.jpg" alt="">
+                </div>
+            </div>
+            <div id="fiveth_goods1_2">
+                <span class="fiveth_title1">——逃跑计划——</span>
+                <span class="fiveth_title2">逃离喧嚣 回归宁静</span>
+                <div class="fiveth_goods_img">
+                    <img src="images/goods3.jpg" alt="">
+                    <img src="images/goods4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- 四块的商品 -->
+        <div id="fiveth_goods2">
+            <div class="fiveth_goods2_g">
+                <span class="fiveth_title3">二手寻宝</span>
+                <span class="fiveth_title4">跳蚤市场</span>
+                <div class="fiveth_goods2_img">
+                    <img src="images/good1.jpg" alt="">
+                </div>
+            </div>
+            <div class="fiveth_goods2_g">
+                <span class="fiveth_title3">爱车达人</span>
+                <span class="fiveth_title4">汽车俱乐部</span>
+                <div class="fiveth_goods2_img">
+                    <img src="images/goods2.jpg" alt="">
+                </div>
+            </div>
+            <div class="fiveth_goods2_g">
+                <span class="fiveth_title3">欧美范儿</span>
+                <span class="fiveth_title4">经典必备款</span>
+                <div class="fiveth_goods2_img">
+                    <img src="images/goods3.jpg" alt="">
+                </div>
+            </div>
+            <div class="fiveth_goods2_g">
+                <span class="fiveth_title3">奇妙物语</span>
+                <span class="fiveth_title4">解压小玩具</span>
+                <div class="fiveth_goods2_img">
+                    <img src="images/goods4.jpg" alt="">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div id="sixed">
+        <div id="sixed_img">
+            <img src="images/mrg.png" alt="">
+        </div>
+        <div id="fiveth_goods2">
+            <div class="fiveth_goods2_g">
+                <span class="fiveth_title3">二手寻宝</span>
+                <span class="fiveth_title4">跳蚤市场</span>
+                <div class="fiveth_goods2_img">
+                    <img src="images/good1.jpg" alt="">
+                </div>
+            </div>
+            <div class="fiveth_goods2_g">
+                <span class="fiveth_title3">爱车达人</span>
+                <span class="fiveth_title4">汽车俱乐部</span>
+                <div class="fiveth_goods2_img">
+                    <img src="images/goods2.jpg" alt="">
+                </div>
+            </div>
+            <div class="fiveth_goods2_g">
+                <span class="fiveth_title3">欧美范儿</span>
+                <span class="fiveth_title4">经典必备款</span>
+                <div class="fiveth_goods2_img">
+                    <img src="images/goods3.jpg" alt="">
+                </div>
+            </div>
+            <div class="fiveth_goods2_g">
+                <span class="fiveth_title3">奇妙物语</span>
+                <span class="fiveth_title4">解压小玩具</span>
+                <div class="fiveth_goods2_img">
+                    <img src="images/goods4.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+        <div id="fiveth_goods2">
+            <div class="fiveth_goods2_g">
+                <span class="fiveth_title3">二手寻宝</span>
+                <span class="fiveth_title4">跳蚤市场</span>
+                <div class="fiveth_goods2_img">
+                    <img src="images/good1.jpg" alt="">
+                </div>
+            </div>
+            <div class="fiveth_goods2_g">
+                <span class="fiveth_title3">爱车达人</span>
+                <span class="fiveth_title4">汽车俱乐部</span>
+                <div class="fiveth_goods2_img">
+                    <img src="images/goods2.jpg" alt="">
+                </div>
+            </div>
+            <div class="fiveth_goods2_g">
+                <span class="fiveth_title3">欧美范儿</span>
+                <span class="fiveth_title4">经典必备款</span>
+                <div class="fiveth_goods2_img">
+                    <img src="images/goods3.jpg" alt="">
+                </div>
+            </div>
+            <div class="fiveth_goods2_g">
+                <span class="fiveth_title3">奇妙物语</span>
+                <span class="fiveth_title4">解压小玩具</span>
+                <div class="fiveth_goods2_img">
+                    <img src="images/goods4.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div id="seventh">
+        <div id="seventh_img">
+            <img src="images/ash.png" alt="">
+        </div>
+        <div id="seventh_goods1">
+            <div id="seventh_goods1_1">
+                <span class="fiveth_title1">——手游大神——</span>
+                <span class="fiveth_title2">为了荣誉而战</span>
+                <div class="fiveth_goods_img">
+                    <img src="images/good1.jpg" alt="">
+                    <img src="images/goods2.jpg" alt="">
+                </div>
+            </div>
+            <div id="seventh_goods1_2">
+                <span class="fiveth_title1">——逃跑计划——</span>
+                <span class="fiveth_title2">逃离喧嚣 回归宁静</span>
+                <div class="fiveth_goods_img">
+                    <img src="images/goods3.jpg" alt="">
+                    <img src="images/goods4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="seventh_goods3">
+            <div id="seventh_goods3_1">
+                <span class="fiveth_title1">——手游大神——</span>
+                <span class="fiveth_title2">为了荣誉而战</span>
+                <div class="fiveth_goods_img">
+                    <img src="images/good1.jpg" alt="">
+                    <img src="images/goods2.jpg" alt="">
+                </div>
+            </div>
+            <div id="seventh_goods3_2">
+                <span class="fiveth_title1">——逃跑计划——</span>
+                <span class="fiveth_title2">逃离喧嚣 回归宁静</span>
+                <div class="fiveth_goods_img">
+                    <img src="images/goods3.jpg" alt="">
+                    <img src="images/goods4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- 四块的商品 -->
+        <div id="seventh_goods2">
+            <div class="fiveth_goods2_g">
+                <span class="fiveth_title3">二手寻宝</span>
+                <span class="fiveth_title4">跳蚤市场</span>
+                <div class="fiveth_goods2_img">
+                    <img src="images/good1.jpg" alt="">
+                </div>
+            </div>
+            <div class="fiveth_goods2_g">
+                <span class="fiveth_title3">爱车达人</span>
+                <span class="fiveth_title4">汽车俱乐部</span>
+                <div class="fiveth_goods2_img">
+                    <img src="images/goods2.jpg" alt="">
+                </div>
+            </div>
+            <div class="fiveth_goods2_g">
+                <span class="fiveth_title3">欧美范儿</span>
+                <span class="fiveth_title4">经典必备款</span>
+                <div class="fiveth_goods2_img">
+                    <img src="images/goods3.jpg" alt="">
+                </div>
+            </div>
+            <div class="fiveth_goods2_g">
+                <span class="fiveth_title3">奇妙物语</span>
+                <span class="fiveth_title4">解压小玩具</span>
+                <div class="fiveth_goods2_img">
+                    <img src="images/goods4.jpg" alt="">
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div id="eighth">
+        <img src="images/eighth.png" alt="">
+    </div>
+
+    <div id="ninth">
+        <img src="images/ninth.png" alt="">
+    </div>
+
+    <!-- 扩充 -->
+    <div id="ex">
+
+    </div>
+
+
+
+
+
+
+    <!-- 回到顶部
+    <div id="back">
+        <div id="back_top">
+        <img src="images/xsjt.png" alt="">
+        
+        </div>
+        <span id="b_top_h"><b>顶部</b></span>
+    </div> -->
+
+
+    <!-- 底部选项 -->
+    <div id="bottom">
+            <ul>
+                <li class="bottom_li">
+                    <a href="jd.html">
+                        <img src="images/首页.png" alt="" class="bottom_icon">
+                    </a>
+                </li>
+                <li class="bottom_li">
+                    <a href="classify.html">
+                        <img src="images/分类.png" alt="" class="bottom_icon">
+                    </a>
+                </li>
+                <li class="bottom_li">
+                    <a href="discover.html">
+                        <img src="images/发现.png" alt="" class="bottom_icon">
+                    </a>
+                </li>
+                <li class="bottom_li">
+                    <a href="">
+                        <img src="images/购物车.png" alt="" class="bottom_icon">
+                    </a>
+                </li>
+                <li class="bottom_li">
+                    <a href="login.html">
+                        <img src="images/登录.png" alt="" class="bottom_icon">
+                    </a>
+                </li>
+    
+            </ul>
+        </div>
+</body>
+</html>
